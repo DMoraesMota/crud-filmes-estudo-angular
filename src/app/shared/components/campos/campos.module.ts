@@ -4,13 +4,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputTextComponent } from './input-text/input-text.component';
+import { InputDatepickerComponent } from './input-datepicker/input-datepicker.component';
 
 
 
 @NgModule({
   declarations: [
     InputTextComponent,
-    InputNumberComponent
+    InputNumberComponent,
+    InputDatepickerComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { InputTextComponent } from './input-text/input-text.component';
   ],
   exports: [
     InputTextComponent,
-    InputNumberComponent
+    InputNumberComponent,
+    InputDatepickerComponent
   ]
 })
 export class CamposModule { }

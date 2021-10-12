@@ -4,17 +4,8 @@
     <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="salvar()" (ngReset)="reiniciarForm()">
       <mat-card-content>
         <dio-input-text titulo="Título *" controlName="titulo" [formGroup]="cadastro"></dio-input-text>
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Link Foto" name="urlFoto" formControlName="urlFoto">
-            <mat-error *ngIf="validacao.hasErrorValidate(f.urlFoto, 'minlength')">Campo precisa ter no minimo 2 caracteres</mat-error>
-          </mat-form-field>
-          <mat-form-field class="full-width">
-              <input readonly matInput [matDatepicker]="picker" placeholder="Data de Lançamento *" name="dtLancamento" formControlName="dtLancamento"
-              (click)="picker.open()">
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker #picker></mat-datepicker>
-              <mat-error *ngIf="validacao.hasErrorValidate(f.dtLancamento, 'required')">Campo obrigatório</mat-error>
-            </mat-form-field>
+        <dio-input-text titulo="Link Foto" controlName="urlFoto" [formGroup]="cadastro"></dio-input-text>
+        <dio-input-datepicker titulo="Data de Lançamento *" controlName="dtLancamento" [formGroup]="cadastro"></dio-input-datepicker>
           <mat-form-field class="full-width">
             <textarea matInput placeholder="Descrição" name="descricao" formControlName="descricao"></textarea>
           </mat-form-field>

@@ -9,9 +9,9 @@
       "projectType": "application",
       "prefix": "",
       "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
+        // "@schematics/angular:component": {
+        //   "styleext": "scss"
+        // }
       },
       "architect": {
         "build": {
