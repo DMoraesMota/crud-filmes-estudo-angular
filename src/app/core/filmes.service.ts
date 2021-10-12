@@ -20,4 +20,8 @@ export class FilmesService {
     const configPrams = this.configService.configurarParametros(config);
     return this.http.get<Filme[]>(url, { params: configPrams });
   }
+
+  salvar(filme: Filme): Observable<Filme> {
+    return this.http.post<Filme>(url, filme);
+  }
 }
