@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputTextComponent } from './input-text/input-text.component';
 import { InputDatepickerComponent } from './input-datepicker/input-datepicker.component';
+import { InputTextareaComponent } from './input-textarea/input-textarea.component';
+import { InputSelectComponent } from './input-select/input-select.component';
 
 
 
@@ -12,7 +14,9 @@ import { InputDatepickerComponent } from './input-datepicker/input-datepicker.co
   declarations: [
     InputTextComponent,
     InputNumberComponent,
-    InputDatepickerComponent
+    InputDatepickerComponent,
+    InputTextareaComponent,
+    InputSelectComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { InputDatepickerComponent } from './input-datepicker/input-datepicker.co
   exports: [
     InputTextComponent,
     InputNumberComponent,
-    InputDatepickerComponent
+    InputDatepickerComponent,
+    InputTextareaComponent,
+    InputSelectComponent
   ]
 })
 export class CamposModule { }

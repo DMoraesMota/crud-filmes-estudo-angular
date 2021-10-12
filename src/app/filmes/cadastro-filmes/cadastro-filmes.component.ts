@@ -10,6 +10,13 @@ import { ValidarCamposService } from 'src/app/shared/components/campos/validar-c
 export class CadastroFilmesComponent implements OnInit {
 
   cadastro: FormGroup;
+  options = [ 'Açao',
+              'Aventura',
+              'Científica',
+              'Ficção Científica',
+              'Romance',
+              'Terror'
+            ];
 
   constructor(private fb: FormBuilder, public validacao: ValidarCamposService) { }
 

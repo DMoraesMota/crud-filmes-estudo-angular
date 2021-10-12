@@ -1,0 +1,11 @@
+<div [formGroup]="formGroup">
+  <mat-form-field class="full-width">
+    <mat-select placeholder="Gênero *" formControlName="genero">
+      <mat-option *ngFor="let option of options" value="{{option}}">{{option}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+
+
+
