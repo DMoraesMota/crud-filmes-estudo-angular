@@ -25,6 +25,10 @@ export class FilmesService {
     return this.http.post<Filme>(url, filme);
   }
 
+  editar(filme: Filme): Observable<Filme> {
+    return this.http.put<Filme>(url + filme.id, filme);
+  }
+
   visualizar(id: number): Observable<Filme> {
     return this.http.get<Filme>(url + id);
   }
