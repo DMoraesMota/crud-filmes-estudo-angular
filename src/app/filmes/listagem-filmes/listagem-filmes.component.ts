@@ -57,8 +57,8 @@ export class ListagemFilmesComponent implements OnInit {
     this.listarFilmes();
   }
 
-  open() {
-
+  open(id: number): void {
+    this.router.navigateByUrl('/filmes/' + id);
   }
 
   private listarFilmes(): void {

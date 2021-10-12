@@ -1,3 +1,4 @@
+import { VisualizarFilmesComponent } from './visualizar-filmes/visualizar-filmes.component';
 import { CamposModule } from './../shared/components/campos/campos.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -17,6 +18,6 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     CamposModule,
     InfiniteScrollModule
   ],
-  declarations: [CadastroFilmesComponent, ListagemFilmesComponent]
+  declarations: [CadastroFilmesComponent, ListagemFilmesComponent, VisualizarFilmesComponent]
 })
 export class FilmesModule { }
